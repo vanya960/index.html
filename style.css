@@ -1,0 +1,236 @@
+body {  
+  margin: 0;  
+  padding: 0;  
+  font-family: 'Arial', sans-serif;  
+  background-image: linear-gradient(white, rgb(227, 227, 227), white, rgb(205, 205, 205));
+  color: #000; 
+}  
+
+/* Шапка (header) */  
+.header {  
+  background-color: #acac97; /* світлий жовтий */  
+  display: flex;  
+  justify-content: space-between;  
+  padding: 10px 20px;  
+  position: relative; 
+}  
+
+/* Логотип */  
+.logo {  
+  font-size: 30px;  
+}  
+
+.dish p{
+  color: black;
+  font-size: 20px;
+}
+
+.main h1{
+  text-align: center;
+  color: #494742;
+}
+
+.main p{
+  text-align: center;
+  color: #1e1e1c;
+}
+
+/* Навігація в шапці */  
+.nav {  
+  display: flex;  
+  gap: 15px;
+  background-color: #e0dfce;
+  border-radius: 5px;
+}  
+.nav-link {  
+  text-decoration: none;  
+  color: #333;  
+  padding: 8px 12px;  
+  border-radius: 4px;  
+  transition: all 0.3s; 
+}  
+.nav-link:hover {  
+  background-color: rgb(241, 241, 227); /* золоте при наведенні */  
+}  
+.nav-link:visited {  
+  color: purple; /* фіолетовий колір після відвідування */  
+}  
+
+/* Основний блок */  
+.main {  
+  padding: 20px;
+}  
+
+/* Заголовок */  
+.title {  
+  font-size: 28px;  
+  margin-bottom: 10px;
+} 
+
+.section{
+  position: relative;
+
+}
+
+.section-div{
+  background-color: #ffffffb7;
+  border: 6px solid rgb(205, 205, 205);
+  border-radius: 20px;
+}
+
+
+
+/* Опис */  
+.description {  
+  font-size: 16px;  
+  margin-bottom: 15px;
+  text-align: center; 
+}  
+
+/* Кнопки */  
+.buttons {  
+  display: flex;  
+  gap: 10px;  
+}  
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #cecdbc; /* зелений колір */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease; /* плавний перехід */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* легка тінь */
+}
+
+/* Ефект підсвічування при наведенні */
+.btn:hover {
+  background-color: hwb(60 44% 55%); /* більш темний зелений */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* посилена тінь для ефекту підсвічування */
+  transform: translateY(-2px); /* невелике підняття для більшої динаміки */
+}
+
+/* Премо зображення */  
+.promo-image img {  
+  max-width: 100%;  
+  border-radius: 10px;  
+  transition: transform 0.3s;
+  float:;
+}  
+.promo-image img:hover {  
+  transform: scale(1.05);  
+}  
+
+/* Меню */  
+#menu {  
+  margin-top: 30px;
+  text-align: center;
+}  
+#menu h2 {  
+  color: #918c82;
+  text-align: center;  
+}  
+.dishes {  
+  display: flex;  
+  flex-wrap: wrap;  
+  gap: 20px;  
+}  
+.dish {  
+  background-color: #b4b4b2;  
+  border-radius: 10px;  
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);  
+  width: 250px;  
+  padding: 10px;  
+  position: relative;  
+  transition: all 0.3s; 
+}  
+.dish:hover {  
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);  
+  transform: translateY(-5px);  
+}  
+
+.dish-img {  
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;  
+}  
+
+
+.dish h3 {  
+  margin-top: 8px;  
+  color: #333131;  
+}  
+
+.promotions h2{
+  text-align: center;
+}
+
+.price {  
+  font-weight: bold;  
+  display: block;  
+  margin-top: 5px;  
+}  
+
+/* Акції */  
+#promotions {  
+  margin-top: 40px;  
+}  
+.promo-image {  
+  width: 40%;
+  height: 25%;  
+  max-width: 600px;  
+  display: block;  
+  margin: 0 auto;  
+  border-radius: 10px;  
+  transition: all 0.3s;  
+  text-align: center;
+}  
+
+.promo-img{  
+  width: 40%;
+  height: 25%;  
+  max-width: 600px;  
+  display: block;  
+  margin: 0 auto;  
+  border-radius: 10px;  
+  transition: all 0.3s;  
+  text-align: center;
+}
+
+.promo-img:hover {  
+  transform: scale(1.02);  
+}  
+
+/* Соцмережі */  
+#social {  
+  margin-top: 40px;  
+}  
+#social h2 {  
+  color: #17a2b8;  
+  text-align: center;  
+}  
+.social-icons {  
+  display: flex;  
+  justify-content: center;  
+  gap: 15px;  
+  margin-top: 15px;  
+}  
+.social-link img {  
+  width: 24px;  
+  height: 24px;  
+  transition: transform 0.3s;  
+}  
+.social-link img:hover {  
+  transform: scale(1.2);  
+}  
+
+/* Футер */  
+.footer {  
+  background-color: #949493;  
+  padding: 20px;  
+  text-align: center;  
+  margin-top: 40px;  
+  position: relative;
+}
+
+
